@@ -1,0 +1,15 @@
+package generics;
+
+public class caixaObjetoTeste {
+
+	public static void main(String[] args) {
+		
+		CaixaObjeto caixaA = new CaixaObjeto();
+		caixaA.aguardar(2.3); // converteu double -> Double
+		
+		Integer coisa = (Integer) caixaA.abrir();
+		
+		System.out.println(coisa);
+	}
+
+}
